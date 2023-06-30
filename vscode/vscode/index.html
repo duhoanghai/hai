@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>freeCodeCamp Survey Form</title>
+  <meta charset="UTF-8"></meta>
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Hai tap code</h1>
+    <p id="description">lan dau tien lam web sau 1 tuan hoc</p>
+    <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input required name="name" id="name" type="text" placeholder="Enter your name" </input></label>
+      <label id="email-label">Email <input id="email" type="email" required name="email" placeholder="Enter your Email" /></label>
+      <label id="number-label">Age<em> (optional)</em> <input required type="number" id="number" name="age" placeholder="Age" min="14" max="120" /></label>
+      <label for="dropdown">Ban la ai  
+        <select id="dropdown" name="role">
+           <option value="">Select current role</option>
+            <option value="1">Nhi xinh</option>
+            <option value="2">Viet anh</option>
+            <option value="3">Ngok</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      <label name="recommend">Hai co dep trai k
+        <label for="definitely"><input id="definitely" type="radio" name="recommend" class="inline" value="definitely" /> Dep vcl</label>
+        <label for="maybe"><input id="maybe" type="radio" name="recommend" class="inline" value="maybe" /> Cung binh thuong thoi</label>
+        <label for="not-sure"><input id="not-sure" type="radio" name="recommend" class="inline" value="not-sure" /> Xau nh con cho rach</label>
+        </label>
+    <label for="feature">Hai thu hut nhat o diem gi?  
+        <select id="feature" name="feature">
+           <option value="">Select an option</option>
+            <option value="1">Dep trai</option>
+            <option value="2">Khoai to</option>
+            <option value="3">Choi game gioi</option>
+            <option value="4">Khac</option>
+          </select>
+        </label>
+        <fieldset>Ban ghet tinh cach gi cua hai<em> (Check all that apply)</em>
+          <label for="checkbox"><input value="checkbox" type="checkbox" class="inline" id="checkbox" name="checkbox" /> Ham lon</label>
+          <label for="checkbox"><input value="checkbox" type="checkbox" class="inline" id="checkbox" name="checkbox" /> Xau trai</label>
+          <label for="checkbox"><input value="checkbox" type="checkbox" class="inline" id="checkbox" name="checkbox" /> Vo duyen</label>
+          <label for="checkbox"><input value="checkbox" type="checkbox" class="inline" id="checkbox" name="checkbox" /> Hoi nach</label>
+          <label for="checkbox"><input value="checkbox" type="checkbox" class="inline" id="checkbox" name="checkbox" /> Hoi chan</label>
+          <label for="checkbox"><input value="checkbox" type="checkbox" class="inline" id="checkbox" name="checkbox" /> Dit thoi</label>
+          <label for="checkbox"><input value="checkbox" type="checkbox" class="inline" id="checkbox" name="checkbox" /> Ngu si</label>
+          <label for="checkbox"><input value="checkbox" type="checkbox" class="inline" id="checkbox" name="checkbox" /> Dan don</label>
+          </fieldset>
+          <label for="comment">Any comments or suggestions?
+          <textarea id="comment" name="comment" rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+    </fieldset>
+    <button id="submit">Submit</button>
+    </form>
+  </body>
+  </html>
